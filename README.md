@@ -9,5 +9,5 @@ def clasificar_sesion(duracion, clics):
 # Programa principal
 # lista vacia para almacenar las sesiones
 sesiones = []
-prin("Ingrese los datos de al menos 5 sesiones de clientes")
+print("Ingrese los datos de al menos 5 sesiones de clientes")
 n = int(input("¿Cuántas sesiones desea registrar? (mínimo 5): "))
