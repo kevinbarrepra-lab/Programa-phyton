@@ -11,3 +11,5 @@ def clasificar_sesion(duracion, clics):
 sesiones = []
 print("Ingrese los datos de al menos 5 sesiones de clientes")
 n = int(input("¿Cuántas sesiones desea registrar? (mínimo 5): "))
+if n < 5:
+    print("Debe ingresar al menos 5 sesiones.")
