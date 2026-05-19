@@ -13,3 +13,10 @@ print("Ingrese los datos de al menos 5 sesiones de clientes")
 n = int(input("¿Cuántas sesiones desea registrar? (mínimo 5): "))
 if n < 5:
     print("Debe ingresar al menos 5 sesiones.")
+else:
+    for i in range(n):
+        print(f"\n--- Sesión {i+1} ---")
+        id_cliente = int(input("Ingrese ID del cliente: "))
+        duracion = int(input("Ingrese duración en segundos: "))
+        clics = int(input("Ingrese número de clics: "))
+        sesiones.append([id_cliente, duracion, clics])
