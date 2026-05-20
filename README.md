@@ -20,3 +20,10 @@ else:
         duracion = int(input("Ingrese duración en segundos: "))
         clics = int(input("Ingrese número de clics: "))
         sesiones.append([id_cliente, duracion, clics])
+ # Generar informe
+    print("\nInforme de Clasificación de Sesiones")
+    print("-----------------------------------")
+    for sesion in sesiones:
+        id_cliente, duracion, clics = sesion
+        clasificacion = clasificar_sesion(duracion, clics)
+        print(f"Cliente {id_cliente}: {clasificacion}")
